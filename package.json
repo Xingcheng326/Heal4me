@@ -1,0 +1,43 @@
+{
+  "name": "heal4me",
+  "version": "1.0.0",
+  "description": "Heal4Me source code repository.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "mocha test/*"
+  },
+  "author": "Kailing",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bing-image-search-async-iterator": "^1.2.3",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "gravatar": "^1.8.0",
+    "image-search-google": "^1.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.0",
+    "node-localstorage": "^2.1.6",
+    "normalize-url": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "concurrently": "^5.1.0",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2",
+    "superagent": "^5.2.2",
+    "supertest": "^4.0.2"
+  }
+}
